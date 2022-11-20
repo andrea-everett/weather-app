@@ -25,12 +25,12 @@ function App() {
     }, [ units, city ]);
 
     const handleUnitsClick = (e) => {
-    const button = e.currentTarget;
-    const currentUnit = button.innerText.slice(1)
+        const button = e.currentTarget;
+        const currentUnit = button.innerText.slice(1)
 
-    const isCelsius = currentUnit ==='C';
-    button.innerText = isCelsius ? 'F' : 'C';
-    setUnits (isCelsius ? "metric" : "imperial")
+        const isCelsius = currentUnit ==='C';
+        button.innerText = isCelsius ? 'F' : 'C';
+        setUnits (isCelsius ? "metric" : "imperial")
   };
 
    const enterKeyPressed = (e) => {
